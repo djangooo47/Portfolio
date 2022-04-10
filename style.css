@@ -1,0 +1,791 @@
+/*------------------------------------------------POLICES D'ÉCRITURE-----------------------------------------------------------*/
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*--------------------------------------------------------BODY-----------------------------------------------------------------*/
+
+body{
+background-color: #ffffff ;
+margin: 0px;
+padding: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+ text-decoration: none;
+}
+
+/*--------------------------------------------------------NAVBAR---------------------------------------------------------------*/
+
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 60px;
+background-color: rgb(255, 255, 255);
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 40px;
+padding: 0px 5%;
+}
+
+nav ul{
+display: flex;
+}
+
+nav ul li a{
+margin: 30px;
+ /*belle police à adapter*/
+font-family: "myriad pro regular";
+color: #505050;
+font-size: 15px;
+font-weight: 700;
+}
+
+.logo{
+    /*belle police à adapter*/
+    font-family: "myriad pro regular";
+    color: black;
+    font-size: 22px;
+}
+
+.active{
+    font-weight: bold;
+    color: #2d2a2a;
+    right: 2px !important ;  
+}
+/*------------------------------------------------------FIN DE LA NAVBAR-------------------------------------------------------*/
+
+
+/*---------------------------------------------------1 ÈRE SECTION (ENTETE)----------------------------------------------------*/
+
+section{
+    width: 100%;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ }
+
+/***j'ai utiliser la propriété nth-child pour séléctionner plusieurs fois un élément enfant dancs ce cas les <p> qui ont pour**** 
+*************parents la classe "container" et ça les séléctionnes dans l'ordre avec les numéro que je leurs attributs.**********/
+
+.container p:nth-child(1){
+font-family: "calibri";
+font-weight: bold;
+color: #6d6d6d;
+font-size: 22px;
+}
+
+.container p:nth-child(2){
+    font-family: "calibri";
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    font-size: 60px;
+    }
+
+    .container p:nth-child(3){
+        font-family: "myriad pro regular";
+        font-weight: bold;
+        color: #403e3e;
+        font-size: 30px;
+        line-height: 30px;
+        }
+
+        .container p{
+        line-height: 0;
+        margin: 45px 0px 25px;
+         }
+
+        .container{
+             position: absolute;
+             left: 13%;
+             top: 32%;
+         }
+
+         .container button{
+         width: 130px;
+         height: 52px;
+         border-radius: 10px;
+         font-family: calibri;
+         font-weight: bold;
+         font-size: 14px;
+         /*contours*/
+         outline: none;
+         margin: 0px 10px;
+         }
+
+         .engagez-btn{
+             border: 2px solid #4d4d4d;
+             color: #373636;
+             background-color: #ffffff;
+         }
+
+         .engagez-btn a{
+            color: #373636;
+            background-color: #ffffff;
+        } 
+
+         .télécharger-cv{
+           background-color: #0b0b0b;
+           color: #ffffff;
+           border: none;
+        }
+
+        .télécharger-cv a{
+            background-color: #0b0b0b;
+            color: #ffffff;
+            border: none;
+         }
+         
+        button:active{
+/**************la fonction "scale" dans la propriété "transform" permet d'agrandir ou de réduire l'échelle d'un élément*********/
+           
+        transform: scale(1.1);
+        }
+
+/*******************transformX permet de déplacer horizontalement un élément HTML par rapport à sa position d'origine.***********/
+       
+            .photo-model{
+            height: 560px;
+            position: absolute;
+            bottom:40px;
+            left: 72%;
+            top: 120px;
+            transform: translateX(-140px);
+            border-radius: 30px;
+        }
+/***************************************************FIN DE LA DIV CLASS CONTAINER***********************************************/
+        
+
+/*********************************************DEBUT DE LA DIV CLASS APROPOS-CONTAINER*******************************************/
+        
+            .apropos-container{
+            width:80%;
+            height: 330px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+            display: flex;
+            margin: -7% auto 20px;
+            top: -20px;
+            position: relative;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .apropos-container img{
+            height: 250px;
+            border-radius: 10px;
+        }
+/****************************DEBUT DE LA DIV CLASS APROPOS-TEXTE QUI EST DANS LA DIV APROPOS-CONTAINER**************************/
+        
+        .apropos-texte{
+            width: 550px;
+            font-family: "Roboto Sérif";
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 0px;
+        }
+
+        .apropos-texte p:nth-child(1){
+            color: #403e3e;
+        }
+
+        .apropos-texte p:nth-child(2){
+            color: #403e3e;
+            font-family: "myriad pro";
+            font-size: 23px;
+            font-weight: bold;
+            line-height: 5px;
+        }
+
+        .apropos-texte p:nth-child(3),
+        .apropos-texte p:nth-child(4){
+            color: #7e7d7d;
+            font-family: calibri;
+            font-size: 16px;
+        }
+
+        .apropos-texte button{
+            width: 130px;
+            height: 52px;
+            border-radius: 10px;
+            font-family: calibri;
+            font-weight: bold;
+            font-size: 14px;
+            /*contours*/
+            outline: none;
+            margin: 20px 10px;
+        }
+/*************************************FIN DE LA DIV CLASS A PROPOS-CONTAINER ET APROPOS-TEXTE***********************************/
+        
+
+/****************************DEBUT DE LA DIV CLASS WRAPPER PRÉSENTE DANS LA SECTION COLOR-SWITCHER******************************/
+        
+        .wrapper{
+            width: 200px;
+            height: 100px;
+            min-width: 500px;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            margin-top: -50px;
+        }
+
+/********************************************************CARD COMPÉTENCES*******************************************************/
+        
+        .glassmorph{
+            width: 400px;
+            height: 350px;
+            padding: 50px 60px;
+            margin-left: 40px ;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.06);
+            border-radius: 10px;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(30px);
+            font-family: 'Nunito';
+            font-size: large;
+            font-weight: 500;
+        }
+
+/*************************************************FORMES CIRCULAIRES SECTION ***************************************************/
+        
+        .shape-1{
+            height: 220px;
+            width: 220px;
+            background: linear-gradient(
+                #8E0E00,
+                #1F1C18
+            );
+            border-radius: 50%;
+            position: absolute;
+            bottom: -100px;
+            left: -80px;
+            z-index: -1;
+        }
+        .shape-2{
+            height: 180px;
+            width: 180px;
+            background: linear-gradient(
+                #00bf8f,
+                #001510
+            );
+            border-radius: 50%;
+            position: absolute;
+            top: -130px;
+            right: -50px;
+            z-index: -1;
+        }
+
+        .shape-3{
+            height: 130px;
+            width: 130px;
+            background: linear-gradient(
+                #000000,
+                #434343
+            );
+            border-radius: 50%;
+            position: absolute;
+            top: 250px;
+            right: -550px;
+            z-index: -1;
+        }
+/********************************************FIN DES FORMES CIRCULAIRES SECTION ************************************************/
+        
+
+        h2{
+            margin-left: 80px;
+            margin-top: -10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+/******************************************ACTIVE LA COULEUR PAR DÉFAUT DE LA PALETTE DE COULEUR********************************/
+        :root{
+            --main-color:#ecf0f1;
+        }
+/****************************************************COLOR-SWITCHER PALETTE DE COULEURS*****************************************/
+        .color-switcher{
+            transition:all .2s linear;
+            min-height: 100vh;
+            background-color: var(--main-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 40px;
+            height: 600px;
+        }
+                 
+        .color-switcher h1{
+           color: #000000;
+           background: #ffffff ;
+           box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+           border-radius: 10px;
+           font-size: 6em;
+           padding: .5em .8em;
+        }
+
+        .color-switcher1{
+            position: fixed;
+            top: 50px; right: -152px;
+            width: 130px;
+            padding: 10px;
+            background: #ffffff;
+            z-index: 1000;
+
+        }
+
+        .color-switcher1 .active{
+        color: white;
+        }
+
+        .color-switcher1 h3{
+         color: #000000;
+         font-size: 20px;
+         margin-bottom: 10px;
+         border-bottom: 1px solid #3333;
+         padding: 5px 0;
+         margin-left: 8px;
+         margin-top: -8px;
+         text-align: center;
+        }
+
+        .color-switcher1 .switcher-btn{
+            position: absolute;
+            top: 10px; left: -35px;
+            /* color: var(--main-color); */
+            /* background: #ffffff; */
+            cursor: pointer;  
+            /* height: 30px; */
+        }
+
+/*************************************************ICONE ENGRENAGE PALETTE DE COULEURS*******************************************/
+       i{font-size: 30px;}
+
+        .color-switcher1 .switcher-btn i{
+           animation: rotate 2s linear infinite;
+        }
+
+/**********************************************KEYFRAMES ROTATE Faire un élément se déplacer progressivement********************/
+        @keyframes rotate{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .color-switcher1 .theme-buttons-color-switcher{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+
+        .color-switcher1 .theme-buttons-color-switcher .theme-buttons{
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin: 5px;
+        cursor: pointer;
+        }
+        
+/******************************************************LOGOS CARD COMPÉTENCES***************************************************/
+        .html-logo i{
+            font-size: 50px;
+            margin-left: 90px;
+        }
+
+        .css-logo i{
+            font-size: 50px;
+            margin-left: 240px;
+        }
+
+        .js-logo i{
+            font-size: 50px;
+            margin-left: 90px;
+        }
+
+        .php-logo i{
+            font-size: 50px;
+            margin-left: 240px;
+        }
+
+        .angular-logo i{
+            font-size: 50px;
+            margin-left: 90px;
+        }
+/********************************************************CARD LANGUES PARLÉES***************************************************/
+        .card-langues{
+        width: 400px;
+        height: 250px;
+        margin-left: 450px;
+        margin-top: -420px;
+        position: absolute;
+        display: flex;
+        }
+
+/*************************************************FORMAT LANGUES PARLÉES********************************************************/
+        .card-langues-format{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 80px;
+        padding: 50px 60px;
+        margin-left: 40px ;
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0.06);
+        border-radius: 10px;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(30px);
+        font-family: 'Nunito';
+        font-size: large;
+        font-weight: 500;
+        }
+        
+        .card-langues h2{
+           margin-left: 40px;
+            }
+
+        .card-expériences{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 200px;
+            margin-left: 0px;
+            margin-top: 0px;
+            position: absolute;
+            }
+
+            
+                @media(min-width: 540px){
+                    .card-langues-format{
+                        display: flex;
+                    flex-direction: column; 
+                    }
+                }
+                  
+                  @media(min-width: 960px){
+                    .card-langues-format{
+                      flex-direction: column;
+                    }
+                  }
+                
+/*************************************************CARD EXPÉRIENCES FORMAT*******************************************************/
+            .card-expériences-format{
+                width: 250px;
+                height: 150px;
+                padding: 50px 60px;
+                margin-left: 490px ;
+                margin-top: -200px;
+                background-color: rgba(255, 255, 255, 0.06);
+                border-radius: 10px;
+                box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(30px);
+                font-family: 'Nunito';
+                font-size: large;
+                font-weight: 500;
+                }
+
+                .card-expériences h2{
+                    margin-left: 20px;
+                    }
+
+                    .card-expériences-format p{
+                        margin-top: 40px;
+                        margin-left: 10px;
+                        } 
+                          
+/*************************************************FIN DE LA CARD EXPÉRIENCES****************************************************/
+               
+
+:root {
+    --background-dark: #2d3548;
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 100%;
+  }
+
+  .titre h3{
+      display: flex;
+     justify-content: center;
+     font-size: 40px;
+     text-decoration: underline;
+
+  }
+  
+  .card-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+    height: 70%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  @media(min-width: 540px){
+    .card-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media(min-width: 960px){
+    .card-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  .card{
+    list-style: none;
+    position: relative;
+  }
+  
+  .card:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  
+  .card__background{
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+  
+  .card:hover .card__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .card-grid:hover > .card:not(:hover) .card__background{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  
+  .card__content{
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card__category{
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+  }
+  
+  .card__heading{
+    color: var(--text-lighter);
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    word-spacing: 100vw;
+  }
+
+
+/**********************************************************CONTACT ME***********************************************************/
+                .contact-me{
+                    width: 100%;
+                    height:280px;
+                    background-size:cover;
+                    background-repeat:no-repeat;
+                    background-color: #000000;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0px 0px 20px 0px;
+                }
+                .contact-me p{
+                    color:#ffffff;
+                    font-size: 30px;
+                    font-family: calibri;
+                    font-weight:bold;
+                    border-bottom:2px solid #ffffff;
+                }
+                .contact-me button {
+                    width:200px;
+                    height:50px;
+                    border-radius: 10px;
+                    background-color: #ffffff;
+                    color: #000000;
+                    border:none;
+                    outline:none;
+                    font-size:14px;
+                    font-weight:bold;
+                }
+
+                .contact-me button a{
+                    color: #000000;
+                }
+
+                @media(min-width: 540px){
+                    .contact-me{
+                      flex-direction: repeat(2, 1fr); 
+                    }
+                  }
+                  
+                  @media(min-width: 960px){
+                    .contact-me{
+                      flex-direction: column; 
+                    }
+                  }
+                  
+/***********************************************************FIN DU CONTACT ME***************************************************/
+
+
+/************************************************************DEBUT DU FOOTER****************************************************/
+                footer p{
+                    font-family: calibri;
+                }
+                footer p:nth-child(1){
+                    font-size: 30px;
+                    font-weight:bold;
+                    color:#191919;
+                    line-height:10px;
+                }
+                footer p:nth-child(2){
+                    font-size: 16px;
+                    color:#7e7d7d;
+                    width:600px;
+                    text-align: center;
+                }
+                footer{
+                    height:300px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                }
+                .social-icons a{
+                    width:40px;
+                    height:40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color:#e6e3e3;
+                    margin:20px 10px;
+                    border-radius:50%;
+                }
+                .social-icons{
+                    display: flex;
+                    
+                }
+                .social-icons i,.social i{
+                    color:#000000;
+                }
+                .social-icons a:hover{
+                    background-color:#000000;
+                    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+                    transition:all ease 0.5s;
+                }
+                .social-icons a:hover i,
+                .social a:hover i{
+                    color:#FFFFFF;
+                    transition:all ease 0.5s;
+                }
+                 
+                .copyright{
+                    color:#565555;
+                    font-size: 12px;
+                    position: absolute;
+                    left:50%;
+                    bottom:10px;
+                    transform: translateX(-50%);
+                }
+                .social{
+                    position: fixed;
+                    top:50%;
+                    right:0px;
+                    transform:translateY(-50%);
+                }
+                .social a{
+                    width:40px;
+                    height:40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin:20px 10px;
+                    border-radius:50%;
+                }
+                .social a:hover{
+                    background-color:#000000;
+                    transition:all ease 0.5s;
+                }
+                .social i{
+                    font-size:20px;
+                    color:#2B2B2B;
+                }
+/**********************************************************FIN DU FOOTER********************************************************/
+
+
+
+/********************************************************MEDIA QUERIES**********************************************************/
+
+
+/*Ordi*/
+@media screen and (min-width: 1024px) and (max-width: 1400px){
+ nav{
+     flex-direction: row;
+     height: auto;
+}
+.contact-me{
+    flex-direction:column;
+     height: auto;
+     justify-content: center;
+}
+
+
+/*Tablette*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    nav{
+    flex-direction: row;
+    height: auto;
+}
+nav ul li a{
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+
+/*Telephone*/
+@media screen and (max-width: 767px){
+    nav{
+    flex-direction: column;
+    height: auto;
+}
+nav ul li a{
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+}
+}
